@@ -1,296 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Novembro Azul</title>
-    <meta name="description" content="Entre em contato com a campanha Novembro Azul para mais informações sobre saúde masculina e prevenção do câncer de próstata">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title data-i18n="meta.title">Contato - Novembro Azul</title>
+    <meta name="description" data-i18n="meta.description" content="Entre em contato com a campanha Novembro Azul para mais informações sobre saúde masculina e prevenção do câncer de próstata">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header -->
 <header class="header">
     <div class="container">
         <div class="header-content">
             <div class="logo">
                 <span class="logo-icon">💙</span>
-                <h1>Novembro Azul</h1>
+                <h1 data-i18n="brand.title">Novembro Azul</h1>
             </div>
-            <button class="mobile-menu-btn" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <button class="mobile-menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html" class="active">Contato</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+                    <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="contato.html" class="active" data-i18n="nav.contact">Contato</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <label for="languageSelect" data-i18n="lang.selector">Idioma</label>
+                    <select id="languageSelect">
+                        <option value="pt">Português</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="es">Español</option><option value="ja">日本語</option><option value="zh">中文</option>
+                    </select>
+                </div>
             </nav>
         </div>
     </div>
 </header>
 
-<!-- Page Header -->
 <section class="page-header section-padding">
     <div class="container">
         <div class="page-header-content">
-            <h1>Entre em <span class="highlight">Contato</span></h1>
-            <p>Tire suas dúvidas, solicite informações ou compartilhe sua experiência conosco</p>
+            <h1 data-i18n-html="page.contact.header.title">Entre em <span class="highlight">Contato</span></h1>
+            <p data-i18n="page.contact.header.subtitle">Tire suas dúvidas, solicite informações...</p>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
 <section class="contact section-padding bg-light">
     <div class="container">
         <div class="contact-content">
             <div class="contact-info">
-                <h2>Fale Conosco</h2>
-                <p>Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo ou preencha o formulário ao lado.</p>
+                <h2 data-i18n="contact.info.title">Fale Conosco</h2>
+                <p data-i18n="contact.info.text">Estamos aqui para ajudar...</p>
 
                 <div class="contact-details">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4..."/></svg>
                         </div>
                         <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>novembroazulPiracicaba@gmail.com</p>
+                            <h3 data-i18n="contact.info.email">Email</h3>
+                            <p data-i18n="contact.info.email.value">novembroazulPiracicaba@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79..."/></svg>
                         </div>
                         <div class="contact-text">
-                            <h3>Telefone</h3>
-                            <p>(19) 98141-8757</p>
+                            <h3 data-i18n="contact.info.phone">Telefone</h3>
+                            <p data-i18n="contact.info.phone.value">(19) 98141-8757</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2..."/></svg>
                         </div>
                         <div class="contact-text">
-                            <h3>Endereço</h3>
-                            <p>Rua Alberto Sabin, 270 - Piracicaba SP</p>
+                            <h3 data-i18n="contact.info.address">Endereço</h3>
+                            <p data-i18n="contact.info.address.value">Rua Alberto Sabin, 270 - Piracicaba SP</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2..."/></svg>
                         </div>
                         <div class="contact-text">
-                            <h3>Horário de Atendimento</h3>
-                            <p>Segunda a Sexta: 9h às 18h</p>
+                            <h3 data-i18n="contact.info.hours">Horário de Atendimento</h3>
+                            <p data-i18n="contact.info.hours.value">Segunda a Sexta: 9h às 18h</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="social-contact">
-                    <h3>Siga-nos nas redes sociais</h3>
+                    <h3 data-i18n="contact.social.title">Siga-nos nas redes sociais</h3>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.7-3.062-1.745c-.614-1.045-.614-2.34 0-3.385c.614-1.045 1.765-1.745 3.062-1.745s2.448.7 3.062 1.745c.614 1.045.614 2.34 0 3.385c-.614 1.045-1.765 1.745-3.062 1.745z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.016 10.016 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
+                        <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073..."/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0..."/></svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57..."/></svg></a>
                     </div>
                 </div>
             </div>
 
             <div class="contact-form-container">
-                <h2>Envie sua Mensagem</h2>
+                <h2 data-i18n="contact.form.title">Envie sua Mensagem</h2>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">Nome Completo</label>
+                        <label for="name" data-i18n="contact.form.name">Nome Completo</label>
                         <input type="text" id="name" name="name" required>
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email" data-i18n="contact.form.email">Email</label>
                         <input type="email" id="email" name="email" required>
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Telefone</label>
+                        <label for="phone" data-i18n="contact.form.phone">Telefone</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="form-group">
-                        <label for="subject">Assunto</label>
+                        <label for="subject" data-i18n="contact.form.subject">Assunto</label>
                         <select id="subject" name="subject" required>
-                            <option value="">Selecione um assunto</option>
-                            <option value="informacao">Solicitar informações</option>
-                            <option value="duvida">Tirar dúvidas</option>
-                            <option value="depoimento">Compartilhar depoimento</option>
-                            <option value="parceria">Proposta de parceria</option>
-                            <option value="outro">Outro</option>
+                            <option value="" data-i18n="contact.form.subject.placeholder">Selecione um assunto</option>
+                            <option value="informacao" data-i18n="contact.form.subject.info">Solicitar informações</option>
+                            <option value="duvida" data-i18n="contact.form.subject.doubt">Tirar dúvidas</option>
+                            <option value="depoimento" data-i18n="contact.form.subject.testimonial">Compartilhar depoimento</option>
+                            <option value="parceria" data-i18n="contact.form.subject.partnership">Proposta de parceria</option>
+                            <option value="outro" data-i18n="contact.form.subject.other">Outro</option>
                         </select>
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensagem</label>
+                        <label for="message" data-i18n="contact.form.message">Mensagem</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                         <span class="error-message"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
 
-<!-- FAQ Section -->
 <section class="faq section-padding">
     <div class="container">
-        <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+        <h2 class="section-title" data-i18n-html="contact.faq.title">Perguntas <span class="highlight">Frequentes</span></h2>
         <div class="faq-content">
             <div class="accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Como posso participar da campanha Novembro Azul?</span>
+                        <span data-i18n="contact.faq.q1">Como posso participar...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Você pode participar de várias formas: divulgando a campanha em suas redes sociais, organizando eventos de conscientização em sua comunidade ou empresa, usando uma fita azul durante o mês de novembro, ou fazendo doações para instituições que trabalham com a prevenção do câncer de próstata.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="contact.faq.a1">Você pode participar...</p></div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Onde posso encontrar materiais da campanha?</span>
+                        <span data-i18n="contact.faq.q2">Onde posso encontrar...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Em nosso site disponibilizamos diversos materiais gratuitos para download, como cartazes, folhetos informativos e artes para redes sociais. Também é possível solicitar materiais físicos entrando em contato conosco.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="contact.faq.a2">Em nosso site...</p></div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Posso solicitar uma palestra sobre o tema para minha empresa/escola?</span>
+                        <span data-i18n="contact.faq.q3">Posso solicitar uma palestra...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Sim! Oferecemos palestras e workshops sobre saúde masculina e prevenção do câncer de próstata para empresas, escolas e outras instituições. Entre em contato conosco para agendar uma data e discutir o formato mais adequado para sua necessidade.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="contact.faq.a3">Sim! Oferecemos palestras...</p></div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Como posso fazer uma doação para a campanha?</span>
+                        <span data-i18n="contact.faq.q4">Como posso fazer uma doação...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Aceitamos doações através de transferência bancária ou cartão de crédito. As doações são utilizadas para produzir materiais educativos, organizar eventos de conscientização e apoiar pesquisas sobre o câncer de próstata. Entre em contato conosco para obter mais informações sobre como doar.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="contact.faq.a4">Aceitamos doações...</p></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="footer-column">
-                <div class="footer-logo">
-                    <span class="logo-icon">💙</span>
-                    <h3>Novembro Azul</h3>
-                </div>
-                <p>Campanha de conscientização sobre a saúde masculina e prevenção do câncer de próstata.</p>
+                <div class="footer-logo"><span class="logo-icon">💙</span><h3 data-i18n="brand.title">Novembro Azul</h3></div>
+                <p data-i18n="footer.description">Campanha de conscientização...</p>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.7-3.062-1.745c-.614-1.045-.614-2.34 0-3.385c.614-1.045 1.765-1.745 3.062-1.745s2.448.7 3.062 1.745c.614 1.045.614 2.34 0 3.385c-.614 1.045-1.765 1.745-3.062 1.745z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.016 10.016 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                    </a>
+                    <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073..."/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0..."/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57..."/></svg></a>
                 </div>
             </div>
             <div class="footer-column">
-                <h4>Links Rápidos</h4>
+                <h4 data-i18n="footer.quicklinks">Links Rápidos</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre o Novembro Azul</a></li>
-                    <li><a href="contato.html">Entre em Contato</a></li>
-                    <li><a href="#statistics">Estatísticas</a></li>
-                    <li><a href="#about">Sobre a Campanha</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+                    <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="contato.html" data-i18n="nav.contact">Contato</a></li>
+                    <li><a href="#contact" data-i18n="footer.link.statistics">Estatísticas</a></li>
+                    <li><a href="#contact" data-i18n="footer.link.aboutCampaign">Sobre a Campanha</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Recursos</h4>
+                <h4 data-i18n="footer.resources">Recursos</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Exames e Prevenção</a></li>
-                    <li><a href="#">Sintomas e Diagnóstico</a></li>
-                    <li><a href="#">Tratamentos</a></li>
-                    <li><a href="#">Mitos e Verdades</a></li>
-                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#" data-i18n="footer.link.treatments">Tratamentos</a></li>
+                    <li><a href="#" data-i18n="footer.link.myths">Mitos e Verdades</a></li>
+                    <li><a href="#" data-i18n="footer.link.testimonials">Depoimentos</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Contato</h4>
+                <h4 data-i18n="footer.contact">Contato</h4>
                 <ul class="footer-contact">
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                        <span>contato@novembroazul.com</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                        <span>(11) 9999-9999</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                        <span>Rua Exemplo, 123 - São Paulo, SP</span>
-                    </li>
+                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4..."/></svg><span data-i18n="contact.info.email.value">novembroazulPiracicaba@gmail.com</span></li>
+                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79..."/></svg><span data-i18n="contact.info.phone.value">(19) 98141-8757</span></li>
+                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2..."/></svg><span data-i18n="contact.info.address.value">Rua Alberto Sabin, 270 - Piracicaba SP</span></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Novembro Azul - Todos os direitos reservados</p>
+            <p>&copy; 2025 <span data-i18n="brand.title">Novembro Azul</span> - <span data-i18n="footer.rights">Todos os direitos reservados</span></p>
         </div>
     </div>
 </footer>
 
-<!-- Scripts -->
+<script src="static/js/translations.js"></script>
 <script src="static/js/main.js"></script>
-<script src="static/js/form-validation.js"></script>
+<script src="static/js/i18n.js"></script>
 </body>
 </html>

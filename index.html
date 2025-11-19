@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Novembro Azul - Conscientização sobre a Saúde Masculina</title>
-    <meta content="Campanha de conscientização sobre a saúde do homem e prevenção do câncer de próstata"
-          name="description">
+    <title data-i18n="meta.title">Novembro Azul - Conscientização sobre a Saúde Masculina</title>
+    <meta name="description" data-i18n="meta.description" content="Campanha de conscientização sobre a saúde do homem e prevenção do câncer de próstata">
     <link href="static/css/style.css" rel="stylesheet">
     <link href="static/css/responsive.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -19,19 +17,29 @@
         <div class="header-content">
             <div class="logo">
                 <span class="logo-icon">💙</span>
-                <h1>Novembro Azul</h1>
+                <h1 data-i18n="brand.title">Novembro Azul</h1>
             </div>
             <button aria-label="Abrir menu" class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <nav class="nav">
                 <ul>
-                    <li><a class="active" href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="index.html" class="active" data-i18n="nav.home">Início</a></li>
+                    <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="contato.html" data-i18n="nav.contact">Contato</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <label for="languageSelect" data-i18n="lang.selector">Idioma</label>
+                    <select id="languageSelect">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="ja">日本語</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
             </nav>
         </div>
     </div>
@@ -40,54 +48,40 @@
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <h2 class="hero-title">Cuide da sua saúde, <span class="highlight">previna-se!</span></h2>
-            <p class="hero-text">Novembro Azul é um movimento mundial que reforça a importância da prevenção e do
-                diagnóstico precoce do câncer de próstata e outras doenças masculinas.</p>
+            <h2 class="hero-title" data-i18n-html="hero.title">Cuide da sua saúde, <span class="highlight">previna-se!</span></h2>
+            <p class="hero-text" data-i18n="hero.subtitle">Novembro Azul é um movimento mundial...</p>
             <div class="hero-buttons">
-                <a class="btn btn-primary" href="sobre.html">Saiba Mais</a>
-                <a class="btn btn-secondary" href="#statistics">Estatísticas</a>
+                <a href="sobre.html" class="btn btn-primary" data-i18n="hero.button.about">Saiba Mais</a>
+                <a href="#statistics" class="btn btn-secondary" data-i18n="hero.button.statistics">Estatísticas</a>
             </div>
         </div>
-    </div>
-    <div class="hero-shape">
-        <svg data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path class="shape-fill"
-                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-        </svg>
     </div>
 </section>
 
 <section class="about section-padding" id="about">
     <div class="container">
-        <h2 class="section-title">O que é o <span class="highlight">Novembro Azul</span>?</h2>
+        <h2 class="section-title" data-i18n-html="about.title">O que é o <span class="highlight">Novembro Azul</span>?</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>O Novembro Azul é uma campanha de conscientização realizada no mês de novembro, dirigida à sociedade
-                    e, em especial, aos homens, para conscientização a respeito de doenças masculinas, com ênfase na
-                    prevenção e no diagnóstico precoce do câncer de próstata.</p>
-                <p>A campanha foi criada na Austrália, em 2003, aproveitando as comemorações do Dia Mundial de Combate
-                    ao Câncer de Próstata, realizado no dia 17 de novembro. No Brasil, o Novembro Azul foi trazido pelo
-                    Instituto Lado a Lado pela Vida em parceria com a Sociedade Brasileira de Urologia.</p>
+                <p data-i18n="about.text1">O Novembro Azul é uma campanha...</p>
+                <p data-i18n="about.text2">A campanha foi criada na Austrália...</p>
                 <div class="about-stats">
                     <div class="stat">
                         <span class="stat-number">2003</span>
-                        <span class="stat-label">Ano de criação</span>
+                        <span class="stat-label" data-i18n="about.stats.year">Ano de criação</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">17</span>
-                        <span class="stat-label">Dia de combate</span>
+                        <span class="stat-label" data-i18n="about.stats.day">Dia de combate</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">+90</span>
-                        <span class="stat-label">Países</span>
+                        <span class="stat-label" data-i18n="about.stats.countries">Países</span>
                     </div>
                 </div>
             </div>
             <div class="about-image">
-                <div class="about-image">
-                    <img src="static/img/na1.png" loading="lazy">
-                </div>
-                </div>
+                <img src="static/img/na1.png" loading="lazy" alt="Campanha Novembro Azul">
             </div>
         </div>
     </div>
@@ -95,38 +89,30 @@
 
 <section class="info-cards-section section-padding bg-light">
     <div class="container">
-        <h2 class="section-title">Informações <span class="highlight">Importantes</span></h2>
+        <h2 class="section-title" data-i18n-html="info.title">Informações <span class="highlight">Importantes</span></h2>
         <div class="info-cards">
             <div class="card">
-                <div class="card-icon">
-                    <span>📊</span>
-                </div>
+                <div class="card-icon"><span>📊</span></div>
                 <div class="card-content">
-                    <h3>Estatísticas</h3>
-                    <p>O câncer de próstata é o segundo mais comum entre os homens no Brasil, atrás apenas do câncer de
-                        pele não melanoma.</p>
-                    <a class="card-link" href="#statistics">Ver estatísticas →</a>
+                    <h3 data-i18n="info.card1.title">Estatísticas</h3>
+                    <p data-i18n="info.card1.text">O câncer de próstata é o segundo...</p>
+                    <a class="card-link" href="#statistics" data-i18n="info.card1.link">Ver estatísticas →</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-icon">
-                    <span>🔍</span>
-                </div>
+                <div class="card-icon"><span>🔍</span></div>
                 <div class="card-content">
-                    <h3>Diagnóstico Precoce</h3>
-                    <p>Quando detectado precocemente, o câncer de próstata tem até 90% de chances de cura.</p>
-                    <a class="card-link" href="sobre.html#diagnosis">Saiba mais →</a>
+                    <h3 data-i18n="info.card2.title">Diagnóstico Precoce</h3>
+                    <p data-i18n="info.card2.text">Quando detectado precocemente...</p>
+                    <a class="card-link" href="sobre.html#diagnosis" data-i18n="info.card2.link">Saiba mais →</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-icon">
-                    <span>👨‍⚕️</span>
-                </div>
+                <div class="card-icon"><span>👨‍⚕️</span></div>
                 <div class="card-content">
-                    <h3>Exames Regulares</h3>
-                    <p>Homens a partir dos 50 anos devem fazer exames anuais. Aqueles com histórico familiar devem
-                        começar aos 45.</p>
-                    <a class="card-link" href="sobre.html#exams">Ver exames →</a>
+                    <h3 data-i18n="info.card3.title">Exames Regulares</h3>
+                    <p data-i18n="info.card3.text">Homens a partir dos 50 anos...</p>
+                    <a class="card-link" href="sobre.html#exams" data-i18n="info.card3.link">Ver exames →</a>
                 </div>
             </div>
         </div>
@@ -135,71 +121,43 @@
 
 <section class="prevention section-padding">
     <div class="container">
-        <h2 class="section-title">Prevenção e <span class="highlight">Cuidados</span></h2>
+        <h2 class="section-title" data-i18n-html="prevention.title">Prevenção e <span class="highlight">Cuidados</span></h2>
         <div class="prevention-content">
             <div class="prevention-image">
-                <div class="about-image">
-                    <img src="static/img/na2.png" loading="lazy">
-                </div>
+                <img src="static/img/na2.png" loading="lazy" alt="Prevenção e cuidados com a saúde">
             </div>
             <div class="prevention-text">
-                <p>Além dos exames regulares, adotar um estilo de vida saudável é fundamental para prevenir o câncer de
-                    próstata e outras doenças.</p>
+                <p data-i18n="prevention.subtitle">Além dos exames regulares, adotar um estilo de vida saudável...</p>
                 <ul class="prevention-list">
-                    <li>
-                        <span class="list-icon">🥗</span>
-                        <div>
-                            <h4>Alimentação Saudável</h4>
-                            <p>Consuma frutas, verduras, legumes e grãos integrais regularmente.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="list-icon">🏃‍♂️</span>
-                        <div>
-                            <h4>Atividade Física</h4>
-                            <p>Pratique exercícios físicos pelo menos 30 minutos por dia.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="list-icon">⚖️</span>
-                        <div>
-                            <h4>Peso Adequado</h4>
-                            <p>Mantenha o peso dentro dos limites saudáveis para sua altura.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="list-icon">🚭</span>
-                        <div>
-                            <h4>Evite Vícios</h4>
-                            <p>Não fume e evite o consumo excessivo de bebidas alcoólicas.</p>
-                        </div>
-                    </li>
+                    <li><span class="list-icon">🥗</span><div><h4 data-i18n="prevention.item1.title">Alimentação Saudável</h4><p data-i18n="prevention.item1.text">Consuma frutas...</p></div></li>
+                    <li><span class="list-icon">🏃‍♂️</span><div><h4 data-i18n="prevention.item2.title">Atividade Física</h4><p data-i18n="prevention.item2.text">Pratique exercícios...</p></div></li>
+                    <li><span class="list-icon">⚖️</span><div><h4 data-i18n="prevention.item3.title">Peso Adequado</h4><p data-i18n="prevention.item3.text">Mantenha o peso...</p></div></li>
+                    <li><span class="list-icon">🚭</span><div><h4 data-i18n="prevention.item4.title">Evite Vícios</h4><p data-i18n="prevention.item4.text">Não fume e evite...</p></div></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Statistics Section -->
 <section class="statistics section-padding bg-light" id="statistics">
     <div class="container">
-        <h2 class="section-title">Estatísticas no <span class="highlight">Brasil</span></h2>
+        <h2 class="section-title" data-i18n-html="statistics.title">Estatísticas no <span class="highlight">Brasil</span></h2>
         <div class="statistics-grid">
             <div class="stat-card">
                 <div class="stat-number" data-count="71730">0</div>
-                <div class="stat-label">Casos estimados por ano (2023-2025)</div>
+                <div class="stat-label" data-i18n="statistics.card1">Casos estimados por ano (2023-2025)</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" data-count="2">0</div>
-                <div class="stat-label">Tipo de câncer mais comum em homens</div>
+                <div class="stat-label" data-i18n="statistics.card2">Tipo de câncer mais comum em homens</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" data-count="90">0</div>
-                <div class="stat-label">Chances de cura com diagnóstico precoce</div>
+                <div class="stat-label" data-i18n="statistics.card3">Chances de cura com diagnóstico precoce</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" data-count="9">0</div>
-                <div class="stat-label">Homens terá a doença (1 em cada 9)</div>
+                <div class="stat-label" data-i18n="statistics.card4">Homens terá a doença (1 em cada 9)</div>
             </div>
         </div>
         <div class="statistics-chart">
@@ -210,52 +168,36 @@
 
 <section class="faq section-padding">
     <div class="container">
-        <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+        <h2 class="section-title" data-i18n-html="faq.title">Perguntas <span class="highlight">Frequentes</span></h2>
         <div class="faq-content">
             <div class="accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Quais são os principais sintomas do câncer de próstata?</span>
+                        <span data-i18n="faq.q1">Quais são os principais sintomas...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Na fase inicial, o câncer de próstata não apresenta sintomas. Quando alguns sinais começam a
-                            aparecer, cerca de 95% dos tumores já estão em fase avançada. Os sintomas mais comuns são:
-                            dificuldade de urinar, necessidade de urinar mais vezes durante o dia ou à noite, e sangue
-                            na urina.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="faq.a1">Na fase inicial...</p></div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Com que idade devo começar a fazer os exames?</span>
+                        <span data-i18n="faq.q2">Com que idade devo...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Homens a partir dos 50 anos devem procurar um urologista anualmente para realizar os exames
-                            preventivos. Para aqueles com histórico familiar de câncer de próstata (pai, irmão ou tio)
-                            ou homens negros, a recomendação é iniciar os exames aos 45 anos.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="faq.a2">Homens a partir...</p></div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>Quais exames são realizados para o diagnóstico?</span>
+                        <span data-i18n="faq.q3">Quais exames são...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Os principais exames são o toque retal e o exame de sangue PSA (Antígeno Prostático
-                            Específico). O toque retal permite ao médico avaliar tamanho, forma e textura da próstata. O
-                            exame de PSA mede a quantidade dessa proteína produzida pela próstata no sangue.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="faq.a3">Os principais exames...</p></div>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <span>O câncer de próstata tem cura?</span>
+                        <span data-i18n="faq.q4">O câncer de próstata...</span>
                         <span class="accordion-icon">+</span>
                     </button>
-                    <div class="accordion-content">
-                        <p>Sim, quando diagnosticado precocemente, o câncer de próstata tem até 90% de chances de cura.
-                            Por isso a importância dos exames preventivos anuais a partir da idade recomendada.</p>
-                    </div>
+                    <div class="accordion-content"><p data-i18n="faq.a4">Sim, quando diagnosticado...</p></div>
                 </div>
             </div>
         </div>
@@ -265,9 +207,9 @@
 <section class="cta section-padding">
     <div class="container">
         <div class="cta-content">
-            <h2>Cuide da sua saúde. <span class="highlight">Agende uma consulta!</span></h2>
-            <p>Não deixe para depois. A prevenção é a melhor forma de cuidar da sua saúde.</p>
-            <a class="btn btn-primary" href="contato.html">Entre em Contato</a>
+            <h2 data-i18n-html="cta.title">Cuide da sua saúde. <span class="highlight">Agende uma consulta!</span></h2>
+            <p data-i18n="cta.subtitle">Não deixe para depois...</p>
+            <a class="btn btn-primary" href="contato.html" data-i18n="cta.button">Entre em Contato</a>
         </div>
     </div>
 </section>
@@ -278,78 +220,60 @@
             <div class="footer-column">
                 <div class="footer-logo">
                     <span class="logo-icon">💙</span>
-                    <h3>Novembro Azul</h3>
+                    <h3 data-i18n="brand.title">Novembro Azul</h3>
                 </div>
-                <p>Campanha de conscientização sobre a saúde masculina e prevenção do câncer de próstata.</p>
+                <p data-i18n="footer.description">Campanha de conscientização...</p>
                 <div class="social-links">
-                    <a aria-label="Facebook" href="#">
-                        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a aria-label="Instagram" href="#">
-                        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.7-3.062-1.745c-.614-1.045-.614-2.34 0-3.385c.614-1.045 1.765-1.745 3.062-1.745s2.448.7 3.062 1.745c.614 1.045.614 2.34 0 3.385c-.614 1.045-1.765 1.745-3.062 1.745z"/>
-                        </svg>
-                    </a>
-                    <a aria-label="Twitter" href="#">
-                        <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.016 10.016 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                    </a>
+                    <a aria-label="Facebook" href="#"><svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a aria-label="Instagram" href="#"><svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.7-3.062-1.745c-.614-1.045-.614-2.34 0-3.385c.614-1.045 1.765-1.745 3.062-1.745s2.448.7 3.062 1.745c.614 1.045.614 2.34 0 3.385c-.614 1.045-1.765 1.745-3.062 1.745z"/></svg></a>
+                    <a aria-label="Twitter" href="#"><svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.016 10.016 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
                 </div>
             </div>
             <div class="footer-column">
-                <h4>Links Rápidos</h4>
+                <h4 data-i18n="footer.quicklinks">Links Rápidos</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre o Novembro Azul</a></li>
-                    <li><a href="contato.html">Entre em Contato</a></li>
-                    <li><a href="#statistics">Estatísticas</a></li>
-                    <li><a href="#about">Sobre a Campanha</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+                    <li><a href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="contato.html" data-i18n="nav.contact">Contato</a></li>
+                    <li><a href="#statistics" data-i18n="footer.link.statistics">Estatísticas</a></li>
+                    <li><a href="#about" data-i18n="footer.link.aboutCampaign">Sobre a Campanha</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Recursos</h4>
+                <h4 data-i18n="footer.resources">Recursos</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Exames e Prevenção</a></li>
-                    <li><a href="#">Sintomas e Diagnóstico</a></li>
-                    <li><a href="#">Tratamentos</a></li>
-                    <li><a href="#">Mitos e Verdades</a></li>
-                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#" data-i18n="footer.link.treatments">Tratamentos</a></li>
+                    <li><a href="#" data-i18n="footer.link.myths">Mitos e Verdades</a></li>
+                    <li><a href="#" data-i18n="footer.link.testimonials">Depoimentos</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Contato</h4>
+                <h4 data-i18n="footer.contact">Contato</h4>
                 <ul class="footer-contact">
                     <li>
-                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                        <span>novembroazulPiracicaba@gmail.com</span>
+                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span data-i18n="contact.info.email.value">novembroazulPiracicaba@gmail.com</span>
                     </li>
                     <li>
-                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                        <span>(19) 98141-8757</span>
+                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span data-i18n="contact.info.phone.value">(19) 98141-8757</span>
                     </li>
                     <li>
-                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                        <span>Rua Alberto Sabin, 270 - Piracicaba SP</span>
+                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span data-i18n="contact.info.address.value">Rua Alberto Sabin, 270 - Piracicaba SP</span>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Novembro Azul - Todos os direitos reservados</p>
+            <p>&copy; 2025 <span data-i18n="brand.title">Novembro Azul</span> - <span data-i18n="footer.rights">Todos os direitos reservados</span></p>
         </div>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="static/js/translations.js"></script>
 <script src="static/js/main.js"></script>
+<script src="static/js/i18n.js"></script>
 </body>
 </html>
